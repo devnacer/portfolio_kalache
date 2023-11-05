@@ -1,0 +1,138 @@
+footer {
+  // background: $background-3;
+  background-image: repeating-linear-gradient(
+      0deg,
+      hsla(29, 0%, 11%, 0.07) 0px,
+      hsla(29, 0%, 11%, 0.07) 50px,
+      transparent 50px,
+      transparent 100px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(29, 0%, 11%, 0.07) 0px,
+      hsla(29, 0%, 11%, 0.07) 50px,
+      transparent 50px,
+      transparent 100px
+    ),
+    linear-gradient(90deg, rgb(49, 53, 82), rgb(49, 53, 82));
+
+  color: $main-white;
+  background-attachment: fixed;
+}
+
+.footer-info {
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  max-width: 400px;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 auto;
+  max-width: 400px;
+}
+
+.footer-right h2 {
+  @include heading-2($main-yellow);
+}
+.footer-left h2 {
+  @include heading-2($main-yellow);
+}
+
+.footer-left p {
+  @include heading-3($main-white);
+}
+
+.footer-right h3 {
+  @include heading-3($main-white);
+  text-decoration: underline;
+}
+
+.footer-right a img {
+  width: 50px;
+  margin-left: 20px;
+}
+
+.footer-bottom {
+  width: 100%;
+  background: $background-5;
+  text-align: center;
+  color: $main-gris;
+  padding: 20px;
+}
+.footer-bottom p {
+  @include paragraphe($main-white);
+  padding: 0 20px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-left {
+    margin: 0 3rem 1rem 0;
+  }
+  .footer-right h2 {
+    @include heading-2-tablet($main-yellow);
+  }
+  .footer-left h2 {
+    @include heading-2-tablet($main-yellow);
+  }
+
+  .footer-left p {
+    @include heading-3-tablet($main-white);
+  }
+
+  .footer-right h3 {
+    @include heading-3-tablet($main-white);
+  }
+
+  .footer-bottom p {
+    @include paragraphe-tablet($main-white);
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .footer-right {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-info {
+    padding: 20px;
+  }
+
+  .footer-right h2 {
+    @include heading-2-smartphone($main-yellow);
+  }
+
+  .footer-left h2 {
+    @include heading-2-smartphone($main-yellow);
+  }
+
+  .footer-left p {
+    @include heading-3-smartphone($main-white);
+  }
+
+  .footer-right h3 {
+    @include heading-3-smartphone($main-white);
+  }
+  .footer-right a img {
+    width: 38px;
+    margin: 0 20px;
+  }
+
+  .footer-bottom p {
+    @include paragraphe-smartphone($main-white);
+    margin-bottom: 0;
+  }
+}

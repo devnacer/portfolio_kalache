@@ -1,0 +1,44 @@
+.container-all-project .section-projects h2 {
+  padding-top: 100px;
+}
+
+.btn-return {
+  @include btn($main-white, $main-yellow);
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0.4rem 0.7rem;
+  z-index: 2000;
+}
+.btn-return span {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .btn-return {
+    position: fixed;
+    bottom: 18px;
+    left: 18px;
+    font-size: 18px;
+  }
+  .btn-return span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn-return {
+    @include btn($main-white, $main-yellow);
+    position: fixed;
+    bottom: 14px;
+    left: 14px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0.2rem 0.5rem;
+  }
+  .btn-return span {
+    font-size: 18px;
+  }
+}

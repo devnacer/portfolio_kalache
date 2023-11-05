@@ -1,0 +1,132 @@
+.section-skills {
+  // background-color: $background-2;
+  background-image: repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0px,
+      rgba(255, 255, 255, 0) 1px,
+      transparent 1px,
+      transparent 104px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0) 0px,
+      rgba(255, 255, 255, 0) 1px,
+      transparent 1px,
+      transparent 104px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgb(31, 34, 53) 0px,
+      rgb(31, 34, 53) 1px,
+      transparent 1px,
+      transparent 26px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgb(31, 34, 53) 0px,
+      rgb(31, 34, 53) 1px,
+      transparent 1px,
+      transparent 26px
+    ),
+    linear-gradient(45deg, rgb(49, 53, 82), rgb(49, 53, 82));
+
+  background-attachment: fixed;
+  padding: 0;
+}
+.section-skills h2 {
+  @include heading-2($main-yellow);
+  text-align: center;
+  padding: 2rem;
+}
+.container-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-skills h3 {
+  @include heading-3($main-yellow);
+  font-weight: 400;
+  text-align: center;
+}
+.container-skills p {
+  @include paragraphe($main-white);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem;
+}
+.img-card-skill {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+.card-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+  transition: 0.05s ease-in-out;
+}
+.card-skill:hover {
+  transform: scale(1.07);
+}
+.card-skill img {
+  width: 100%;
+  color: $background-1;
+  background-color: $background-2;
+}
+.card-skill h3 {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-skills h2 {
+    @include heading-2-tablet($main-yellow);
+    text-align: center;
+    margin: 0 auto;
+
+    padding: 1.5rem;
+  }
+
+  .container-skills h3 {
+    @include heading-3-tablet($main-yellow);
+    font-weight: 400;
+  }
+  .container-skills p {
+    @include paragraphe-tablet($main-white);
+  }
+
+  .skills {
+    display: flex;
+    margin: 1.5rem auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-skills h2 {
+    @include heading-2-smartphone($main-yellow);
+    text-align: center;
+
+    padding: 1.5rem;
+  }
+
+  .container-skills h3 {
+    @include heading-3-smartphone($main-yellow);
+    font-size: 18px;
+  }
+  .img-card-skill {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .container-skills p {
+    @include paragraphe-smartphone($main-white);
+  }
+
+  .skills {
+    display: flex;
+    margin: 1.5rem auto;
+  }
+}

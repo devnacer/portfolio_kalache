@@ -1,0 +1,173 @@
+// nav-bar
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $background-2;
+  @extend %flex-center;
+  border-bottom: solid 0.1rem $main-yellow;
+  z-index: 19;
+  transition: all 300ms ease-in-out;
+}
+
+nav ul {
+  display: flex;
+  margin: 1rem auto;
+  list-style: none;
+}
+nav ul li a {
+  @include Navigation($main-white);
+  display: flex;
+  padding: 0 1rem;
+  text-decoration: none;
+  transition: 0.15s;
+}
+nav ul li a:hover {
+  color: $main-yellow;
+}
+
+.highlighted{
+  color: $main-yellow;
+}
+
+// nav aparition
+.scroll-down {
+  nav {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.toggle {
+  background-color: rgba(255, 255, 255, 0.968);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  // __________humberger btn__________________________
+  .humburger {
+    // direction: rtl;
+    position: fixed;
+    top: 30px;
+    right: -10px;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 33;
+
+    &.active {
+      .burger {
+        background: rgba(255, 255, 255, 0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+
+        &::before {
+          top: 0;
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          top: 0;
+          transform: rotate(135deg);
+        }
+      }
+    }
+  }
+  // __________end humberger btn__________________________
+
+  .burger {
+    width: 30px;
+    height: 3px;
+    background: $main-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: 0.5s;
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      top: 8px;
+    }
+  }
+
+  // claque
+  .calque {
+    position: fixed;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 166, 0, 0.115);
+    z-index: 7;
+    transition: width 0.3s ease-in-out; /* Utilisez une transition pour animer la largeur */
+  }
+  .calque-active {
+    border-right: solid 0.1rem $main-orange;
+    width: 100%;
+  }
+  //end claque
+
+  // _________________ nav___________________
+  .nav-open {
+    transform: translateX(0%);
+  }
+  nav {
+    display: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 60%;
+    border-bottom: none;
+    border-right: solid 0.1rem $main-yellow;
+
+    width: 250px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 19;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  nav ul li {
+    margin: 1rem auto;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    width: 150px;
+  }
+
+  nav ul li {
+    margin: 1rem auto;
+  }
+  nav ul li a {
+    font-size: 18px;
+  }
+
+}

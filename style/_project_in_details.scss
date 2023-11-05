@@ -1,0 +1,194 @@
+.container-project-in-details {
+  background-color: $background-4;
+  display: flex;
+  justify-content: center;
+  color: $main-white;
+  border-bottom: 1px solid $main-gris;
+}
+.project-in-details {
+  max-width: 1100px;
+  padding: 50px;
+}
+
+.project-in-details h2 {
+  @include heading-2($main-yellow);
+  padding-top: 100px;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.project-in-details h3 {
+  @include heading-3($main-yellow);
+  padding-top: 1rem;
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.project-in-details p {
+  @include paragraphe($main-white);
+  margin: 1rem;
+  line-height: 2;
+  font-size: 18px;
+}
+.project-in-details li {
+  @include paragraphe($main-white);
+  margin: 1rem;
+  line-height: 1.8;
+  font-size: 18px;
+  list-style-position: outside;
+}
+
+.project-in-details a {
+  color: $main-orange;
+}
+
+.technos-project-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.techno-card-details {
+  @include paragraphe($main-white);
+  padding: 0.1rem 0.2rem;
+  border: solid 1px $main-white;
+}
+.link-project-details {
+  display: flex;
+  justify-content: center;
+}
+
+.link-project-details a {
+  @include link($main-gris);
+  margin: 1rem;
+}
+
+.link-project-details a:hover {
+  color: $main-white;
+}
+
+@media screen and (max-width: 1024px) {
+  .project-in-details h2 {
+    @include heading-2-tablet($main-yellow);
+    padding-top: 100px;
+    margin-bottom: 2rem;
+  }
+  .project-in-details h3 {
+    @include heading-3-tablet($main-yellow);
+    padding-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .project-in-details p {
+    @include paragraphe-tablet($main-white);
+    margin: 0.8rem;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  .project-in-details li {
+    @include paragraphe-tablet($main-white);
+    margin: 0.8rem;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  .techno-card-details {
+    @include paragraphe-tablet($main-white);
+    padding: 0.1rem 0.2rem;
+    border: solid 1px $main-white;
+  }
+
+  .link-project-details a {
+    @include link($main-gris);
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .project-in-details {
+    max-width: 1100px;
+    padding: 32px;
+  }
+  .project-in-details h2 {
+    @include heading-2-smartphone($main-yellow);
+    padding-top: 100px;
+    margin-bottom: 2rem;
+  }
+  .project-in-details h3 {
+    @include heading-3-smartphone($main-yellow);
+  }
+}
+
+// ________________slider images
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.carousel {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.carousel ul {
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.2s opacity ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 4;
+  font-size: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  border-radius: 0.3rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel {
+    height: 70vh;
+  }
+
+  .carousel-button {
+    font-size: 2rem;
+    border-radius: 0.2rem;
+  }
+}
