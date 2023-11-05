@@ -1412,6 +1412,7 @@ header .btn-cv button:hover {
 .form input[type=text],
 .form input[type=email],
 .form textarea {
+  font-family: "Poppins", sans-serif;
   width: 100%;
   padding: 10px;
   border: 1px solid #ebebeb;
@@ -1419,29 +1420,6 @@ header .btn-cv button:hover {
 
 .form-control input:focus {
   outline: 0;
-}
-
-.form .btn {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.form button {
-  color: #ffffff;
-  display: flex;
-  padding: 0.625rem 2.75rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  border-radius: 0.25rem;
-  border: 1px solid #fec576;
-  background: #f4a12e;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.6875rem; /* 150% */
-  cursor: pointer;
 }
 
 .form-control.success::after {
@@ -1469,6 +1447,90 @@ header .btn-cv button:hover {
   visibility: visible;
 }
 
+@media screen and (max-width: 1024px) {
+  .section-contact h2 {
+    color: #fec576;
+    font-family: "Italiana", serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: -0.04rem;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .section-contact h3 {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+    letter-spacing: -0.02rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    padding: 0 50px;
+  }
+  .container-contact .form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 50px;
+  }
+  .form label {
+    font-size: 18px;
+  }
+  .form input[type=text],
+  .form input[type=email],
+  .form textarea {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-contact h2 {
+    color: #fec576;
+    font-family: "Italiana", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: -0.03rem;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .section-contact h3 {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+    letter-spacing: -0.01rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    padding: 0 20px;
+  }
+  .container-contact .form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 20px;
+  }
+  .form label {
+    font-size: 16px;
+  }
+  .form input[type=text],
+  .form input[type=email],
+  .form textarea {
+    font-size: 16px;
+  }
+}
 .container-project-in-details {
   background-color: #2c304a;
   display: flex;
