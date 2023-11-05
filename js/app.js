@@ -50,3 +50,9 @@ viewButton.addEventListener("click", () => {
 });
 
 // ____________________END_Download or See Curriculum_____________________
+
+// ____________________btn go to the top__________________________________
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+// _________________end of___btn go to the top____________________________

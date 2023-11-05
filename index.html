@@ -18,10 +18,14 @@
       <li><a href="#section-home">HOME</a></li>
       <li><a href="#section-skills">SKILLS</a></li>
       <li><a href="#section-projects">PROJECTS</a></li>
-      <li><a href="#footer">CONTACT</a></li>
+      <li><a href="#contact">CONTACT</a></li>
     </ul>
   </nav>
   <!-- end nav -->
+
+  <!-- btn-goToTheTop  -->
+  <button  class="btn-goToTheTop" id="btn-goToTheTop" onclick="scrollToTop()">&#8593;</button>
+  <!-- end btn-goToTheTop  -->
 
   <!-- btn-humberger -->
   <div class="humburger">
@@ -35,7 +39,12 @@
 
   <!-- header -->
   <header id="section-home">
-    <div class="container-header">
+
+    <div class="bgAnimation" id="bgAnimation">
+      <div class="backgroundAmim"></div>
+    </div>
+
+    <!-- <div class="container-header"> -->
 
       <!-- presentation -->
       <p data-aos="fade-down">Hello, I'm</p>
@@ -43,9 +52,12 @@
       <h1 data-aos="fade-down">KALACHE Nac </h1>
 
       <h2 data-aos="fade-down">FullStack Junior Web Developer</h2>
-      <p class="notice" data-aos="fade-down">I am a junior full-stack web developer actively seeking job opportunities
-        or freelance missions.
-      </p>
+
+      <div class="notice" data-aos="fade-down">
+        <p >I am a junior full-stack web developer actively seeking job opportunities or freelance missions.
+        </p>
+      </div> 
+      
       <!-- end presentation -->
 
       <!-- cv -->
@@ -74,7 +86,8 @@
       </div>
       <!-- end links social -->
 
-    </div>
+    <!-- </div> -->
+    
   </header>
   <!-- end header -->
 
@@ -348,10 +361,10 @@
 
 
   <!-- Contact -->
-  <section id="section-contact" class="section-contact">
+  <section id="contact" class="section-contact">
   <h2>Contact Me</h2>
 
-    <h3>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
+    <h3>I am a junior full-stack web developer actively seeking job opportunities or freelance missions.
     </h3>
     <div class="container-contact">
 
@@ -384,9 +397,8 @@
           <small>Error message</small>
         </div>
 
-        <div class="btn">
-          <button type="submit">Send</button>
-        </div>
+        <button type="submit" class="see_projects">Send</button>
+
       </form>
       
 
@@ -435,6 +447,7 @@
 
 
   <script src="js/app.js"></script>
+  <script src="js/bg_anim_header.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/dark_mode.js"></script>
   <script src="js/section_projects.js"></script>
