@@ -157,14 +157,14 @@
 
 // _______btn see all projects_________
 .see_projects {
-  @include btn($color1, $background-6);
+  @include btn($color1, $background-1);
   margin: 0 auto;
   font-size: 16px;
   width: 12rem;
   padding: 0.4rem 0.7rem;
 }
 .see_projects:hover {
-  @include btn($background-1, $background-1);
+  @include btn($background-1, $color1);
   margin: 0 auto;
   font-size: 16px;
   width: 12rem;
