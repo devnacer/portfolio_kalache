@@ -2,8 +2,8 @@
   background-color: $background-4;
   display: flex;
   justify-content: center;
-  color: $main-white;
-  border-bottom: 1px solid $main-gris;
+  color: $color1;
+  border-bottom: 1px solid $color2;
 }
 .project-in-details {
   max-width: 1100px;
@@ -11,27 +11,27 @@
 }
 
 .project-in-details h2 {
-  @include heading-2($main-yellow);
+  @include heading-2($color3);
   padding-top: 100px;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 .project-in-details h3 {
-  @include heading-3($main-yellow);
+  @include heading-3($color3);
   padding-top: 1rem;
   font-size: 24px;
   margin-bottom: 1rem;
 }
 
 .project-in-details p {
-  @include paragraphe($main-white);
+  @include paragraphe($color1);
   margin: 1rem;
   line-height: 2;
   font-size: 18px;
 }
 .project-in-details li {
-  @include paragraphe($main-white);
+  @include paragraphe($color1);
   margin: 1rem;
   line-height: 1.8;
   font-size: 18px;
@@ -39,7 +39,7 @@
 }
 
 .project-in-details a {
-  color: $main-orange;
+  color: $color4;
 }
 
 .technos-project-details {
@@ -48,9 +48,9 @@
   justify-content: center;
 }
 .techno-card-details {
-  @include paragraphe($main-white);
+  @include paragraphe($color1);
   padding: 0.1rem 0.2rem;
-  border: solid 1px $main-white;
+  border: solid 1px $color1;
 }
 .link-project-details {
   display: flex;
@@ -58,47 +58,47 @@
 }
 
 .link-project-details a {
-  @include link($main-gris);
+  @include link($color2);
   margin: 1rem;
 }
 
 .link-project-details a:hover {
-  color: $main-white;
+  color: $color1;
 }
 
 @media screen and (max-width: 1024px) {
   .project-in-details h2 {
-    @include heading-2-tablet($main-yellow);
+    @include heading-2-tablet($color3);
     padding-top: 100px;
     margin-bottom: 2rem;
   }
   .project-in-details h3 {
-    @include heading-3-tablet($main-yellow);
+    @include heading-3-tablet($color3);
     padding-top: 0.8rem;
     margin-bottom: 0.8rem;
   }
 
   .project-in-details p {
-    @include paragraphe-tablet($main-white);
+    @include paragraphe-tablet($color1);
     margin: 0.8rem;
     line-height: 1.7;
     font-size: 16px;
   }
   .project-in-details li {
-    @include paragraphe-tablet($main-white);
+    @include paragraphe-tablet($color1);
     margin: 0.8rem;
     line-height: 1.6;
     font-size: 16px;
   }
 
   .techno-card-details {
-    @include paragraphe-tablet($main-white);
+    @include paragraphe-tablet($color1);
     padding: 0.1rem 0.2rem;
-    border: solid 1px $main-white;
+    border: solid 1px $color1;
   }
 
   .link-project-details a {
-    @include link($main-gris);
+    @include link($color2);
     margin: 1rem;
   }
 }
@@ -108,12 +108,12 @@
     padding: 32px;
   }
   .project-in-details h2 {
-    @include heading-2-smartphone($main-yellow);
+    @include heading-2-smartphone($color3);
     padding-top: 100px;
     margin-bottom: 2rem;
   }
   .project-in-details h3 {
-    @include heading-3-smartphone($main-yellow);
+    @include heading-3-smartphone($color3);
   }
 }
 

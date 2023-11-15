@@ -1,6 +1,6 @@
 .section-contact {
   // background: $background-2;
-  border-bottom: solid 1px $main-gris;
+  border-bottom: solid 1px $color2;
   background-image: repeating-linear-gradient(
       0deg,
       hsla(29, 0%, 11%, 0.07) 0px,
@@ -18,13 +18,13 @@
     linear-gradient(90deg, rgb(49, 53, 82), rgb(49, 53, 82));
 }
 .section-contact h2 {
-  @include heading-2($main-yellow);
+  @include heading-2($color3);
   text-align: center;
   padding: 2rem;
 }
 
 .section-contact h3 {
-  @include heading-3($main-white);
+  @include heading-3($color1);
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -51,7 +51,7 @@
 
 .form label {
   display: block;
-  color: $main-white;
+  color: $color1;
   font-family: $font-family-Poppins;
   font-size: 20px;
   font-style: normal;
@@ -67,7 +67,7 @@
   font-family: $font-family-Poppins;
   width: 100%;
   padding: 10px;
-  border: 1px solid $main-gris;
+  border: 1px solid $color2;
 }
 
 .form-control input:focus {
@@ -79,12 +79,12 @@
 //   justify-content: flex-end;
 // }
 // .form button {
-//   @include btn($main-white, $main-orange);
+//   @include btn($color1, $color4);
 // }
 
 .form-control.success::after {
   content: "\2713";
-  color: $main-green;
+  color: $color5;
   position: absolute;
   right: 10px;
   top: 50%;
@@ -92,11 +92,11 @@
 }
 
 .form-control.error input {
-  border-color: $main-orange;
+  border-color: $color4;
 }
 
 .form-control small {
-  color: $main-orange;
+  color: $color4;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -111,13 +111,13 @@
   
   
   .section-contact h2 {
-    @include heading-2-tablet($main-yellow);
+    @include heading-2-tablet($color3);
     text-align: center;
     padding: 1.5rem;
   }
   
   .section-contact h3 {
-    @include heading-3-tablet($main-white);
+    @include heading-3-tablet($color1);
     text-align: center;
     margin-bottom: 2rem;
     font-weight: 400;
@@ -147,13 +147,13 @@
 
      
   .section-contact h2 {
-    @include heading-2-smartphone($main-yellow);
+    @include heading-2-smartphone($color3);
     text-align: center;
     padding: 1.5rem;
   }
   
   .section-contact h3 {
-    @include heading-3-smartphone($main-white);
+    @include heading-3-smartphone($color1);
     text-align: center;
     margin-bottom: 2rem;
     font-weight: 400;

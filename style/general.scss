@@ -2,18 +2,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"); // variables
 
 // colors
-$main-white: #ffffff;
-$main-gris: #ebebeb;
-$main-yellow: #fec576;
-$main-orange: #f4a12e;
-$main-green: #13c118;
+// $color1: #ffffff;
+// $color2: #ebebeb;
+// $color3: #fec576;
+// $color4: #f4a12e;
+// $color5: #13c118;
 
-$background-1: #1f2235;
-$background-2: #313552;
-$background-3: #1f2235;
-$background-4: #2c304a;
-$background-5: #11131d;
+// $background-1: #1f2235;
+// $background-2: #313552;
+// $background-3: #1f2235;
+// $background-4: #2c304a;
+// $background-5: #11131d;
 
+$color1: #495057; //black
+$color2: #343A40;
+$color3: #212529; 
+$color4: rgba(233, 123, 38, 0.984);
+$color5: black;
+
+$background-1: #F8F9FA;
+$background-2: #E9ECEF;
+$background-3: #DEE2E6;
+$background-4: #CED4DA;
+$background-5: #ADB5BD;
+$background-6: #6C757D;
+// $background-7: #495057;
+// $background-8: #343A40;
+// $background-9: #212529;
 // font
 $font-family-Italiana: "Italiana", serif;
 $font-family-Poppins: "Poppins", sans-serif;
@@ -121,7 +136,7 @@ $font-family-Poppins: "Poppins", sans-serif;
   gap: 0.5rem;
   border-radius: 0.25rem;
   // background: $background;
-  border: 1px solid $main-yellow;
+  border: 1px solid $color1;
   background: $background;
   font-family: $font-family-Poppins;
   font-size: 18px;

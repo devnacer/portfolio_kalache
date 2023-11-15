@@ -3,12 +3,12 @@
   padding-bottom: 50px;
 }
 .section-projects h2 {
-  @include heading-2($main-yellow);
+  @include heading-2($color3);
   text-align: center;
   padding: 2rem;
 }
 .section-projects h3 {
-  @include heading-3($main-yellow);
+  @include heading-3($color3);
   text-align: center;
   font-weight: 400;
   margin-bottom: 2rem;
@@ -26,7 +26,7 @@
   width: 400px;
   height: 586px;
   background-color: $background-4;
-  border: solid 1px $main-yellow;
+  border: solid 1px $color3;
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease-in-out;
@@ -42,7 +42,7 @@
   width: 368px;
   height: 220px;
   margin: 16px auto;
-  border: solid 1px $main-yellow;
+  border: solid 1px $color3;
   overflow: hidden;
 }
 .img-card img {
@@ -57,11 +57,11 @@
 }
 
 .info-card h3 {
-  @include heading-3($main-yellow);
+  @include heading-3($color3);
   margin: 0 18px 14px;
 }
 .info-card p {
-  @include paragraphe($main-white);
+  @include paragraphe($color1);
   margin: 0 20px 20px;
 }
 .technos-project {
@@ -74,9 +74,9 @@
   right: 20px;
 }
 .techno-card {
-  @include paragraphe($main-white);
+  @include paragraphe($color1);
   padding: 0.1rem 0.2rem;
-  border: solid 1px $main-white;
+  border: solid 1px $color1;
   margin: 0 0.3rem 0.3rem 0;
   //   transform: translateX(-50%);
 }
@@ -90,18 +90,18 @@
   right: 20px;
 }
 .link-project a {
-  @include link($main-gris);
+  @include link($color2);
   display: flex;
 }
 .link-project a {
   margin-bottom: 16px;
 }
 .link-project a:hover {
-  color: $main-white;
+  color: $color1;
 }
 
 .card-project:hover {
-  // border: solid 2px $main-orange;
+  // border: solid 2px $color4;
   box-shadow: rgba(233, 123, 38, 0.984) 0px 4px 6px;
 }
 
@@ -116,13 +116,13 @@
 
 // _______btn see all projects_________
 .see_projects {
-  @include btn($main-white, $background-2);
+  @include btn($color1 ,$background-1);
   width: 14rem;
   padding: 0.6rem 0.9rem;
   text-decoration: none;
 }
 .see_projects:hover {
-  @include btn($main-white, $main-yellow);
+  @include btn($background-1, $color1);
   width: 14rem;
   padding: 0.6rem 0.9rem;
 }
@@ -130,41 +130,41 @@
 
 @media screen and (max-width: 1024px) {
   .section-projects h2 {
-    @include heading-2-tablet($main-yellow);
+    @include heading-2-tablet($color3);
     padding: 1.5rem;
   }
   .section-projects h3 {
-    @include heading-3-tablet($main-yellow);
+    @include heading-3-tablet($color3);
     text-align: center;
     font-weight: 400;
     margin-bottom: 2rem;
   }
   .info-card h3 {
-    @include heading-3-tablet($main-yellow);
+    @include heading-3-tablet($color3);
   }
   .info-card p {
-    @include paragraphe-tablet($main-white);
+    @include paragraphe-tablet($color1);
   }
 
   .techno-card {
-    @include paragraphe-tablet($main-white);
+    @include paragraphe-tablet($color1);
   }
 
   .link-project a {
-    @include link-tablet($main-gris);
+    @include link-tablet($color2);
   }
 }
 
 // _______btn see all projects_________
 .see_projects {
-  @include btn($main-white, $background-2);
+  @include btn($color1, $background-6);
   margin: 0 auto;
   font-size: 16px;
   width: 12rem;
   padding: 0.4rem 0.7rem;
 }
 .see_projects:hover {
-  @include btn($main-white, $main-yellow);
+  @include btn($background-1, $background-1);
   margin: 0 auto;
   font-size: 16px;
   width: 12rem;
@@ -177,11 +177,11 @@
     padding: 10px 10px 50px 10px;
   }
   .section-projects h2 {
-    @include heading-2-smartphone($main-yellow);
+    @include heading-2-smartphone($color3);
     padding: 1.5rem;
   }
   .section-projects h3 {
-    @include heading-3-tablet($main-yellow);
+    @include heading-3-tablet($color3);
     text-align: center;
     font-weight: 400;
     margin-bottom: 1rem;
@@ -192,7 +192,7 @@
     width: 300px;
     height: 480px;
     background-color: $background-4;
-    border: solid 1px $main-yellow;
+    border: solid 1px $color3;
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease-in-out;
@@ -205,7 +205,7 @@
     width: 280px;
     height: 180px;
     margin: 10px auto;
-    border: solid 1px $main-yellow;
+    border: solid 1px $color3;
     overflow: hidden;
   }
   .img-card img {
@@ -220,11 +220,11 @@
   }
 
   .info-card h3 {
-    @include heading-3-smartphone($main-yellow);
+    @include heading-3-smartphone($color3);
     margin: 0 18px 14px;
   }
   .info-card p {
-    @include paragraphe-smartphone($main-white);
+    @include paragraphe-smartphone($color1);
     margin: 0 20px 20px;
   }
   .technos-project {
@@ -237,9 +237,9 @@
     right: 20px;
   }
   .techno-card {
-    @include paragraphe-smartphone($main-white);
+    @include paragraphe-smartphone($color1);
     padding: 0.1rem 0.2rem;
-    border: solid 1px $main-white;
+    border: solid 1px $color1;
     margin: 0 0.3rem 0.3rem 0;
     //   transform: translateX(-50%);
   }
@@ -253,7 +253,7 @@
     right: 20px;
   }
   .link-project a {
-    @include link-smartphone($main-gris);
+    @include link-smartphone($color2);
     display: flex;
   }
   .link-project a {
@@ -262,14 +262,14 @@
 
   // _______btn see all projects_________
   .see_projects {
-    @include btn($main-white, $background-2);
+    @include btn($color1, $background-2);
     margin: 0 auto;
     font-size: 14px;
     width: 10rem;
     padding: 0.2rem 0.5rem;
   }
   .see_projects:hover {
-    @include btn($main-white, $main-yellow);
+    @include btn($color1, $color3);
     margin: 0 auto;
     font-size: 14px;
     width: 10rem;

@@ -14,9 +14,9 @@ footer {
       transparent 50px,
       transparent 100px
     ),
-    linear-gradient(90deg, rgb(49, 53, 82), rgb(49, 53, 82));
+    linear-gradient(90deg, $background-4, $background-5);
 
-  color: $main-white;
+  color: $color1;
   background-attachment: fixed;
 }
 
@@ -42,18 +42,18 @@ footer {
 }
 
 .footer-right h2 {
-  @include heading-2($main-yellow);
+  @include heading-2($color3);
 }
 .footer-left h2 {
-  @include heading-2($main-yellow);
+  @include heading-2($color3);
 }
 
 .footer-left p {
-  @include heading-3($main-white);
+  @include heading-3($color2);
 }
 
 .footer-right h3 {
-  @include heading-3($main-white);
+  @include heading-3($color2);
   text-decoration: underline;
 }
 
@@ -64,13 +64,13 @@ footer {
 
 .footer-bottom {
   width: 100%;
-  background: $background-5;
+  background: $background-6;
   text-align: center;
-  color: $main-gris;
+  color: $color2;
   padding: 20px;
 }
 .footer-bottom p {
-  @include paragraphe($main-white);
+  @include paragraphe($background-2);
   padding: 0 20px;
   margin-bottom: 0;
 }
@@ -80,22 +80,22 @@ footer {
     margin: 0 3rem 1rem 0;
   }
   .footer-right h2 {
-    @include heading-2-tablet($main-yellow);
+    @include heading-2-tablet($color3);
   }
   .footer-left h2 {
-    @include heading-2-tablet($main-yellow);
+    @include heading-2-tablet($color3);
   }
 
   .footer-left p {
-    @include heading-3-tablet($main-white);
+    @include heading-3-tablet($color1);
   }
 
   .footer-right h3 {
-    @include heading-3-tablet($main-white);
+    @include heading-3-tablet($color1);
   }
 
   .footer-bottom p {
-    @include paragraphe-tablet($main-white);
+    @include paragraphe-tablet($color1);
     margin-bottom: 0;
   }
 }
@@ -112,19 +112,19 @@ footer {
   }
 
   .footer-right h2 {
-    @include heading-2-smartphone($main-yellow);
+    @include heading-2-smartphone($color3);
   }
 
   .footer-left h2 {
-    @include heading-2-smartphone($main-yellow);
+    @include heading-2-smartphone($color3);
   }
 
   .footer-left p {
-    @include heading-3-smartphone($main-white);
+    @include heading-3-smartphone($color1);
   }
 
   .footer-right h3 {
-    @include heading-3-smartphone($main-white);
+    @include heading-3-smartphone($color1);
   }
   .footer-right a img {
     width: 38px;
@@ -132,7 +132,7 @@ footer {
   }
 
   .footer-bottom p {
-    @include paragraphe-smartphone($main-white);
+    @include paragraphe-smartphone($color1);
     margin-bottom: 0;
   }
 }

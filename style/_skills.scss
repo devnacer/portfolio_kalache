@@ -16,25 +16,25 @@
     ),
     repeating-linear-gradient(
       0deg,
-      rgb(31, 34, 53) 0px,
-      rgb(31, 34, 53) 1px,
+      $background-3 0px,
+      $background-4 1px,
       transparent 1px,
       transparent 26px
     ),
     repeating-linear-gradient(
       90deg,
-      rgb(31, 34, 53) 0px,
-      rgb(31, 34, 53) 1px,
+      $background-3 0px,
+      $background-4 1px,
       transparent 1px,
       transparent 26px
     ),
-    linear-gradient(45deg, rgb(49, 53, 82), rgb(49, 53, 82));
+    linear-gradient(45deg, $background-1, $background-2);
 
   background-attachment: fixed;
   padding: 0;
 }
 .section-skills h2 {
-  @include heading-2($main-yellow);
+  @include heading-2($color3);
   text-align: center;
   padding: 2rem;
 }
@@ -44,12 +44,12 @@
   align-items: center;
 }
 .container-skills h3 {
-  @include heading-3($main-yellow);
+  @include heading-3($color3);
   font-weight: 400;
   text-align: center;
 }
 .container-skills p {
-  @include paragraphe($main-white);
+  @include paragraphe($color1);
 }
 
 .skills {
@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 1024px) {
   .section-skills h2 {
-    @include heading-2-tablet($main-yellow);
+    @include heading-2-tablet($color3);
     text-align: center;
     margin: 0 auto;
 
@@ -92,11 +92,11 @@
   }
 
   .container-skills h3 {
-    @include heading-3-tablet($main-yellow);
+    @include heading-3-tablet($color3);
     font-weight: 400;
   }
   .container-skills p {
-    @include paragraphe-tablet($main-white);
+    @include paragraphe-tablet($color1);
   }
 
   .skills {
@@ -106,14 +106,14 @@
 }
 @media screen and (max-width: 767px) {
   .section-skills h2 {
-    @include heading-2-smartphone($main-yellow);
+    @include heading-2-smartphone($color3);
     text-align: center;
 
     padding: 1.5rem;
   }
 
   .container-skills h3 {
-    @include heading-3-smartphone($main-yellow);
+    @include heading-3-smartphone($color3);
     font-size: 18px;
   }
   .img-card-skill {
@@ -122,7 +122,7 @@
     margin-bottom: 0.5rem;
   }
   .container-skills p {
-    @include paragraphe-smartphone($main-white);
+    @include paragraphe-smartphone($color1);
   }
 
   .skills {

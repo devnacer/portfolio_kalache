@@ -4,9 +4,9 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background-color: $background-2;
+  background-color: $background-1;
   @extend %flex-center;
-  border-bottom: solid 0.1rem $main-yellow;
+  border-bottom: solid 0.1rem $color3;
   z-index: 19;
   transition: all 300ms ease-in-out;
 }
@@ -17,18 +17,18 @@ nav ul {
   list-style: none;
 }
 nav ul li a {
-  @include Navigation($main-white);
+  @include Navigation($color1);
   display: flex;
   padding: 0 1rem;
   text-decoration: none;
   transition: 0.15s;
 }
 nav ul li a:hover {
-  color: $main-yellow;
+  color: $color4;
 }
 
 .highlighted{
-  color: $main-yellow;
+  color: $color4;
 }
 
 // nav aparition
@@ -80,7 +80,7 @@ nav ul li a:hover {
   .burger {
     width: 30px;
     height: 3px;
-    background: $main-white;
+    background: $color1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -119,7 +119,7 @@ nav ul li a:hover {
     transition: width 0.3s ease-in-out; /* Utilisez une transition pour animer la largeur */
   }
   .calque-active {
-    border-right: solid 0.1rem $main-orange;
+    border-right: solid 0.1rem $color4;
     width: 100%;
   }
   //end claque
@@ -135,7 +135,7 @@ nav ul li a:hover {
     left: 0;
     right: 60%;
     border-bottom: none;
-    border-right: solid 0.1rem $main-yellow;
+    border-right: solid 0.1rem $color3;
 
     width: 250px;
     height: 100%;
