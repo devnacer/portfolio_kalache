@@ -30,7 +30,7 @@ The carousel in this project was created by following the code from the YouTube 
 
 The JavaScript AOS (Animate on Scroll) library was used in this project to create scroll animations. You can find the documentation and source code for the library at the following link: [AOS - Animate on Scroll](https://github.com/michalsnik/aos).
 
-The header animation on the page is implemented by following the guidance provided at Animated Background CSS.
+The header animation on the page is from the YouTube channel "Teenage Programmer." You can find the original code at the following link: [Classic Animated Background | HTML, CSS & Javascript](https://github.com/WebDevSimplified/js-css-carousel).
 
 ## [Copyright and License](https://github.com/devnacer/portfolio_kalache#copyright-and-license)
 
