@@ -137,15 +137,15 @@ header .btn-cv button:hover {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: auto;
+  top: 22%;
   left: 0;
-  right: auto;
   border: 1px solid $main-yellow;
   text-decoration: none;
   background-color: $main-yellow;
   border-radius: 0 6px 6px 0;
   transition: 0.3s ease;
   box-shadow: rgba(233, 123, 38, 0.284) 0px 4px 6px;
+  z-index: 3;
 }
 .links-fixed:hover {
   transform: scaleY(1.03);
