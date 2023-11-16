@@ -39,7 +39,7 @@ nav ul li a:hover {
 }
 
 .toggle {
-  background-color: rgba(255, 255, 255, 0.968);
+  background-color: $color3;
   position: absolute;
   top: 20px;
   left: 20px;
@@ -60,7 +60,7 @@ nav ul li a:hover {
 
     &.active {
       .burger {
-        background: rgba(255, 255, 255, 0);
+        background: $color3;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
 
         &::before {
@@ -80,7 +80,7 @@ nav ul li a:hover {
   .burger {
     width: 30px;
     height: 3px;
-    background: $color1;
+    background: $color3;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -94,7 +94,7 @@ nav ul li a:hover {
       position: absolute;
       width: 30px;
       height: 3px;
-      background: #fff;
+      background: $color3;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       transition: 0.5s;
     }
@@ -116,7 +116,7 @@ nav ul li a:hover {
     height: 100%;
     background-color: rgba(255, 166, 0, 0.115);
     z-index: 7;
-    transition: width 0.3s ease-in-out; /* Utilisez une transition pour animer la largeur */
+    transition: width 0.3s ease-in-out;
   }
   .calque-active {
     border-right: solid 0.1rem $color4;
@@ -135,7 +135,7 @@ nav ul li a:hover {
     left: 0;
     right: 60%;
     border-bottom: none;
-    border-right: solid 0.1rem $color3;
+    border-right: solid 0.1rem $background-6;
 
     width: 250px;
     height: 100%;
