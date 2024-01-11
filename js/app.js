@@ -46,7 +46,7 @@ downloadButton.addEventListener("click", () => {
 // Function to handle the click on the view button
 viewButton.addEventListener("click", () => {
   // Redirect the user to the PDF file in a new tab
-  window.open("assets/KALACHE_cv.pdf", "_blank");
+  window.open("assets/cv_Kalache2024.pdf", "_blank");
 });
 
 // ____________________END_Download or See Curriculum_____________________
