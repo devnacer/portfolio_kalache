@@ -37,8 +37,8 @@ const viewButton = document.getElementById("view-cv-button");
 downloadButton.addEventListener("click", () => {
   // Create a temporary link
   const link = document.createElement("a");
-  link.href = "assets/KALACHE_CV.pdf"; // Path to your PDF file
-  link.download = "KALACHE_CV.pdf"; // File name when downloaded
+  link.href = "assets/cv_Kalache2024.pdf"; // Path to your PDF file
+  link.download = "cv_Kalache2024.pdf"; // File name when downloaded
   link.target = "_blank"; // Open the link in a new tab
   link.click();
 });
