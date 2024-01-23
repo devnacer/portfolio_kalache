@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"); // variables
+// inter
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 // colors
 // $color1: #ffffff;
@@ -32,6 +34,8 @@ $background-6: #6C757D;
 // font
 $font-family-Italiana: "Italiana", serif;
 $font-family-Poppins: "Poppins", sans-serif;
+$font-family-inter: "Inter", sans-serif;
+
 
 // placeholders
 %flex-center {
@@ -54,7 +58,7 @@ $font-family-Poppins: "Poppins", sans-serif;
 @mixin heading-2($color) {
   color: $color;
   /* Heading-2 */
-  font-family: $font-family-Italiana;
+  font-family: $font-family-inter;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -65,7 +69,7 @@ $font-family-Poppins: "Poppins", sans-serif;
 @mixin heading-3($color) {
   color: $color;
   /* Heading-2 */
-  font-family: $font-family-Poppins;
+  font-family: $font-family-inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -78,7 +82,7 @@ $font-family-Poppins: "Poppins", sans-serif;
   color: $color;
 
   /* Body */
-  font-family: $font-family-Poppins;
+  font-family: $font-family-inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -91,17 +95,17 @@ $font-family-Poppins: "Poppins", sans-serif;
   color: $color;
 
   /* Navigation */
-  font-family: $font-family-Italiana;
+  font-family: $font-family-inter;
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 120%; /* 1.575rem */
   letter-spacing: -0.03938rem;
 }
 
 @mixin link($color) {
   color: $color;
-  font-family: $font-family-Poppins;
+  font-family: $font-family-inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -138,7 +142,7 @@ $font-family-Poppins: "Poppins", sans-serif;
   // background: $background;
   border: 1px solid $color1;
   background: $background;
-  font-family: $font-family-Poppins;
+  font-family: $font-family-inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -159,7 +163,7 @@ $font-family-Poppins: "Poppins", sans-serif;
 
 @mixin heading-2-tablet($color) {
   color: $color;
-  font-family: $font-family-Italiana;
+  font-family: $font-family-inter;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -170,7 +174,7 @@ $font-family-Poppins: "Poppins", sans-serif;
 
 @mixin heading-3-tablet($color) {
   color: $color;
-  font-family: $font-family-Poppins;
+  font-family: $font-family-inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -181,7 +185,7 @@ $font-family-Poppins: "Poppins", sans-serif;
 
 @mixin paragraphe-tablet($color) {
   color: $color;
-  font-family: $font-family-Poppins;
+  font-family: $font-family-inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -192,17 +196,17 @@ $font-family-Poppins: "Poppins", sans-serif;
 
 @mixin Navigation-tablet($color) {
   color: $color;
-  font-family: $font-family-Italiana;
+  font-family: $font-family-inter;
   font-size: 1.125rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 125%;
   letter-spacing: -0.03rem;
 }
 
 @mixin link-tablet($color) {
   color: $color;
-  font-family: $font-family-Poppins;
+  font-family: $font-family-inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -219,7 +223,7 @@ $font-family-Poppins: "Poppins", sans-serif;
   gap: 0.25rem;
   border-radius: 0.2rem;
   background: $background;
-  font-family: $font-family-Poppins;
+  font-family: $font-family-inter;
   font-size: 0.8rem;
   font-style: normal;
   font-weight: 400;
@@ -239,7 +243,7 @@ $font-family-Poppins: "Poppins", sans-serif;
 
 @mixin heading-2-smartphone($color) {
   color: $color;
-  font-family: $font-family-Italiana;
+  font-family: $font-family-inter;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -250,7 +254,7 @@ $font-family-Poppins: "Poppins", sans-serif;
 
 @mixin heading-3-smartphone($color) {
   color: $color;
-  font-family: $font-family-Poppins;
+  font-family: $font-family-inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -261,7 +265,7 @@ $font-family-Poppins: "Poppins", sans-serif;
 
 @mixin paragraphe-smartphone($color) {
   color: $color;
-  font-family: $font-family-Poppins;
+  font-family: $font-family-inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -272,17 +276,17 @@ $font-family-Poppins: "Poppins", sans-serif;
 
 @mixin Navigation-smartphone($color) {
   color: $color;
-  font-family: $font-family-Italiana;
+  font-family: $font-family-inter;
   font-size: 1rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 130%;
   letter-spacing: -0.03rem;
 }
 
 @mixin link-smartphone($color) {
   color: $color;
-  font-family: $font-family-Poppins;
+  font-family: $font-family-inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -299,7 +303,7 @@ $font-family-Poppins: "Poppins", sans-serif;
   gap: 0.2rem;
   border-radius: 0.2rem;
   background: $background;
-  font-family: $font-family-Poppins;
+  font-family: $font-family-inter;
   font-size: 0.8rem;
   font-style: normal;
   font-weight: 400;

@@ -43,9 +43,13 @@ footer {
 
 .footer-right h2 {
   @include heading-2($color3);
+  
 }
 .footer-left h2 {
   @include heading-2($color3);
+  color: $color5;
+  font-family: $font-family-Italiana;
+
 }
 
 .footer-left p {
