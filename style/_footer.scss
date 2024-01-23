@@ -88,6 +88,8 @@ footer {
   }
   .footer-left h2 {
     @include heading-2-tablet($color3);
+    color: $color5;
+    font-family: $font-family-Italiana;
   }
 
   .footer-left p {
@@ -121,6 +123,8 @@ footer {
 
   .footer-left h2 {
     @include heading-2-smartphone($color3);
+    color: $color5;
+    font-family: $font-family-Italiana;
   }
 
   .footer-left p {

@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 767px) {
   .btn-return {
-    @include btn($color1, $color3);
+    @include btn($color1, $background-1);
     position: fixed;
     bottom: 14px;
     left: 14px;

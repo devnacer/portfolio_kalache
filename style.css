@@ -2103,6 +2103,8 @@ footer {
     line-height: 125%;
     letter-spacing: -0.04rem;
     margin-bottom: 30px;
+    color: black;
+    font-family: "Italiana", serif;
   }
   .footer-left p {
     color: #495057;
@@ -2164,6 +2166,8 @@ footer {
     line-height: 125%;
     letter-spacing: -0.03rem;
     margin-bottom: 20px;
+    color: black;
+    font-family: "Italiana", serif;
   }
   .footer-left p {
     color: #495057;
@@ -2255,7 +2259,7 @@ footer {
     gap: 0.5rem;
     border-radius: 0.25rem;
     border: 1px solid #495057;
-    background: #212529;
+    background: #F8F9FA;
     font-family: "Inter", sans-serif;
     font-size: 18px;
     font-style: normal;
