@@ -37,8 +37,8 @@ const viewButton = document.getElementById("view-cv-button");
 downloadButton.addEventListener("click", () => {
   // Create a temporary link
   const link = document.createElement("a");
-  link.href = "assets/cv_Kalache2024.pdf"; // Path to your PDF file
-  link.download = "cv_Kalache2024.pdf"; // File name when downloaded
+  link.href = "assets/Kalache_cv_2024.pdf"; // Path to your PDF file
+  link.download = "Kalache_cv_2024.pdf"; // File name when downloaded
   link.target = "_blank"; // Open the link in a new tab
   link.click();
 });
@@ -46,7 +46,7 @@ downloadButton.addEventListener("click", () => {
 // Function to handle the click on the view button
 viewButton.addEventListener("click", () => {
   // Redirect the user to the PDF file in a new tab
-  window.open("assets/cv_Kalache2024.pdf", "_blank");
+  window.open("assets/Kalache_cv_2024.pdf", "_blank");
 });
 
 // ____________________END_Download or See Curriculum_____________________
